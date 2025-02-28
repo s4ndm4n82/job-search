@@ -1,5 +1,5 @@
 <template>
   <div>
-    <h1 class="text-3xl font-bold underline">Hello Vue !!!</h1>
+    <h1 class="mt-8 text-6xl text-center">Hello Vue !!!</h1>
   </div>
 </template>

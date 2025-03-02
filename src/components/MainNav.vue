@@ -5,9 +5,6 @@
                 <a href="/" class="flex h-full items-center text-xl">
                     {{ company }}
                 </a>
-                <h2 class="ml-8 flex h-full items-center">
-                    Developed by {{ author.geekName }}
-                </h2>
             </div>
         </div>
     </header>
@@ -18,11 +15,7 @@ export default {
     name: 'MainNav',
     data() {
         return {
-            company: "Careers by S4NDM4M & Co.",
-            author: {
-                geekName: "S4NDM4M",
-                realName: "Sandaruwan"
-            },
+            company: "Careers by S4NDM4M"
         };
     },
 };

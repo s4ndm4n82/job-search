@@ -1,16 +1,14 @@
 <template>
-  <div>
-    <MainNav />
-  </div>
+  <main-nav />
 </template>
 
 <script>
-import MainNav from '@/components/MainNav.vue';
+import MainNav from "@/components/MainNav.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     MainNav,
-  }
-}
+  },
+};
 </script>

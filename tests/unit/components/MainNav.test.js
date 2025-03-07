@@ -13,6 +13,7 @@ describe("MainNav", () => {
       },
     });
   };
+
   it("displays company name", () => {
     renderMainNav();
     const companyName = screen.getByText("Bobo Careers");
@@ -23,7 +24,7 @@ describe("MainNav", () => {
     renderMainNav();
     const navigationMenuItems = screen.getAllByRole("listitem");
     const navigationMenuTexts = navigationMenuItems.map(
-      (item) => item.textContent,
+      (item) => item.textContent
     );
     expect(navigationMenuTexts).toEqual([
       "Teams",

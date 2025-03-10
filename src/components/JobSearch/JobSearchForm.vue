@@ -7,7 +7,7 @@
         <div class="flex h-full flex-1 flex-nowrap text-base font-light">
             <div class="relative flex h-full flex-1 items-center pr-3">
                 <label class="absolute -top-10 left-0">Role</label>
-                <text-input placeholder="Software engineer" />
+                <text-input v-model="role" placeholder="Software engineer" />
             </div>
 
             <span
@@ -18,7 +18,7 @@
 
             <div class="relative flex h-full flex-1 items-center pl-3">
                 <label class="absolute -top-10 left-0">Where?</label>
-                <text-input placeholder="Los Angeles" />
+                <text-input v-model="location" placeholder="Los Angeles" />
             </div>
         </div>
 
@@ -32,10 +32,7 @@ import TextInput from '@/components/Shared/TextInput.vue';
 
 export default {
     name: 'JobSearchForm',
-    components: {
-        ActionButton,
-        TextInput,
-    },
+    components: { ActionButton, TextInput },
     data() {
         return {
             role: '',

@@ -32,8 +32,14 @@ describe('TheSubnav', () => {
 
     describe('when user is not on jobs page', () => {
         it('does NOT display job count', () => {
+            const $route = {
+                name: 'Home',
+            };
             render(TheSubnav, {
                 global: {
+                    mocks: {
+                        $route,
+                    },
                     stubs: {
                         FontAwesomeIcon: true,
                     },

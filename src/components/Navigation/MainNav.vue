@@ -42,7 +42,7 @@ import ActionButton from "@/components/Shared/ActionButton.vue";
 import ProfileImage from "@/components/Navigation/ProfileImage.vue";
 import TheSubnav from "@/components/Navigation/TheSubnav.vue";
 import { mapActions, mapState } from "pinia";
-import { useUserStore } from "@/Stores/user";
+import { useUserStore } from "@/stores/user";
 
 export default {
   name: "MainNav",
